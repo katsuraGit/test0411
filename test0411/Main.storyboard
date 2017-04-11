@@ -18,34 +18,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="Enter a Phpneword: ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3" translatesAutoresizingMaskIntoConstraints="NO" text="Enter a Phpneword: " misplaced="YES">
                                 <rect key="frame" x="64" y="110" width="482" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" text="1-855-XAMARIN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4" translatesAutoresizingMaskIntoConstraints="NO" text="1-855-XAMARIN" misplaced="YES">
                                 <rect key="frame" x="64" y="177" width="482" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
                                 <rect key="frame" x="64" y="285" width="482" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Translate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
                                 <rect key="frame" x="64" y="344" width="482" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Call">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint id="9" firstItem="3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90"/>
+                            <constraint id="10" firstItem="3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="64"/>
+                            <constraint id="11" firstItem="4" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="33"/>
+                            <constraint id="12" firstItem="4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="64"/>
+                            <constraint id="13" firstItem="5" firstAttribute="top" secondItem="4" secondAttribute="bottom" constant="78"/>
+                            <constraint id="14" firstItem="5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="64"/>
+                            <constraint id="15" firstItem="6" firstAttribute="top" secondItem="5" secondAttribute="bottom" constant="29"/>
+                            <constraint id="16" firstItem="6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="64"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="PhoneNumberText" destination="4" id="name-outlet-4"/>
